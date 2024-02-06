@@ -1,0 +1,37 @@
+<form
+  [formGroup]="formLogin"
+  (ngSubmit)="onSubmit()"
+  class="w-full max-w-md mx-auto mt-8 p-8 bg-slate-100 rounded shadow-xl"
+>
+  <div class="mb-6">
+    <label class="block text-gray-600 font-bold mb-2" for="inline-email">
+      Email
+    </label>
+    <input
+      class="w-full bg-gray-200 border-2 border-gray-300 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+      id="inline-email"
+      type="email"
+      placeholder="Escribe tu email"
+      formControlName="email"
+    />
+  </div>
+  <div class="mb-6">
+    <label class="block text-gray-600 font-bold mb-2" for="inline-password">
+      Contraseña
+    </label>
+    <input
+      class="w-full bg-gray-200 border-2 border-gray-300 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+      id="inline-password"
+      type="text"
+      placeholder="Introduce tu contraseña"
+      formControlName="contraseña"
+    />
+  </div>
+  <div class="flex items-center justify-between">
+    <input
+      type="submit"
+      value="login"
+      class="w-full bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+    />
+  </div>
+</form>
